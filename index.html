@@ -9,9 +9,10 @@
 </head>
 <body>
     <div id="app">
-        <header>
-            <h1>{{title}}</h1>
-            <img v-bind:src="vueTest" width="660" height="480" alt="immagine di vue"/>
+        <header class="container">
+            <h1 v-blind:class="colorTitle">{{title}}</h1>
+            <img v-bind:src="vueTest" width="180" height="250" alt="immagine di vue"/>
+            <button @click="changeColor">click me, change color a title</button>
         </header>
     </div>
     

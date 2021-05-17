@@ -13,8 +13,21 @@ let screen = new Vue(
      el: '#app',
      data:{
          title: 'Learn vueJS',
-         vueTest: './img/vueTest.jpg'
+         vueTest: './img/vueTest.png',
+         colorTitle: 'black',
+     },
+     methods:{
+         changeColor(){
+            if (this.colorTitle === 'black') {
+                this.colorTitle = 'green';
+            } else if(this.colorTitle === 'green'){
+                this.colorTitle = 'orange';
+            }else{
+                this.colorTitle = 'black';
+            }
+         }
      }
+
     });
 
 // Bonus: Aggiungere alla pagina un’immagine, presa anch’essa da un data.
