@@ -20,9 +20,7 @@ let screen = new Vue(
          changeColor(){
             if (this.colorTitle === 'black') {
                 this.colorTitle = 'green';
-            } else if(this.colorTitle === 'green'){
-                this.colorTitle = 'orange';
-            }else{
+            } else{
                 this.colorTitle = 'black';
             }
          }
